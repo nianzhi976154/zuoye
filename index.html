@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yijicaidan > li {
+            list-style: none;
+            background-color: cadetblue;
+            margin: 10px 0;
+            width: 80px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            position: relative;
+        }
+        a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none; 
+        }
+        .yijihezi {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .erjihezi {
+            position: absolute;
+            left: 100%;
+            top:-25%;
+            background-color: rgb(227, 135, 181);
+            width: 200px;
+            height: auto; 
+            border-radius: 8px;
+            display: none;
+        }
+        .erjicaidan {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+        }
+        .erjicaidan > li {
+            list-style: none;
+            margin: 0px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+        .yijicaidan > li:hover > .erjihezi {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="yijihezi">
+        <ul class="yijicaidan">
+            <li>
+                <a href="#">娱乐</a>
+                <div class="erjihezi">
+                    <ul class="erjicaidan">
+                        <li><a href="#">游戏</a></li>
+                        <li><a href="#">影视</a></li>
+                        <li><a href="#">音乐</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">科技</a>
+                <div class="erjihezi">
+                    <ul class="erjicaidan">
+                        <li><a href="#">数码</a></li>
+                        <li><a href="#">手机</a></li>
+                        <li><a href="#">电脑</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">美食</a>
+                <div class="erjihezi">
+                    <ul class="erjicaidan">
+                        <li><a href="#">薯条</a></li>
+                        <li><a href="#">薯片</a></li>
+                        <li><a href="#">薯饼</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
